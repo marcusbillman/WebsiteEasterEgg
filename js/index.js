@@ -1,4 +1,5 @@
 const elements = document.querySelector(".container").children;
+const confuse = document.querySelectorAll(".confuse");
 
 window.addEventListener("mousemove", event => {
     const relX = event.clientX - window.innerWidth / 2;
@@ -24,4 +25,10 @@ window.addEventListener("mousemove", event => {
         ")";
     document.body.style.backgroundSize =
         200 + Math.abs(relX) / 10 + "px " + (200 + Math.abs(relY) / 10) + "px";
+    document.body.style.filter =
+        "hue-rotate(" + (relY / (window.innerHeight / 2)) * 360 + "deg)";
+
+    confuse.forEach(element => {
+        element.style.transform = "rotate(" + relY + "deg)";
+    });
 });
