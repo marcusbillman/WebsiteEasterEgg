@@ -12,9 +12,19 @@ window.addEventListener("mousemove", event => {
         relY / 2 +
         "px) rotate(" +
         relY / 4 +
-        "deg)";
+        "deg) scale(" +
+        Math.tan(relX / window.innerHeight) * 3 +
+        ")";
     elements[1].style.transform =
-        "translate(" + relY / -4 + "px, " + relX / 3 + "px)";
+        "translate(" +
+        relY / -4 +
+        "px, " +
+        relX / 3 +
+        "px) rotateY(" +
+        relY +
+        Math.sin(relX / 100) / 500 +
+        "deg)";
+    elements[1].style.perspective = Math.sqrt(relX * relY) + "px";
     elements[2].style.transform =
         "translate(" +
         relX +
@@ -29,6 +39,6 @@ window.addEventListener("mousemove", event => {
         "hue-rotate(" + (relY / (window.innerHeight / 2)) * 360 + "deg)";
 
     confuse.forEach(element => {
-        element.style.transform = "rotate(" + relY + "deg)";
+        element.style.transform = "rotateX(" + relY + "deg)";
     });
 });

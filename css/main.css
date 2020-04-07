@@ -22,9 +22,22 @@ h1 {
   font-size: 60px;
   -webkit-transform: rotate(10deg) scaleX(2);
           transform: rotate(10deg) scaleX(2);
+  -webkit-perspective: 50px;
+          perspective: 50px;
 }
 
 p {
   font-size: 30px;
+}
+
+.confuse {
+  display: inline-block;
+}
+
+.marcsu {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 /*# sourceMappingURL=main.css.map */
