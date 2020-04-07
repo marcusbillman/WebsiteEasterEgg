@@ -13,7 +13,15 @@ window.addEventListener("mousemove", event => {
         relY / 4 +
         "deg)";
     elements[1].style.transform =
-        "translate(" + relX / -4 + "px, " + relY / 6 + "px)";
+        "translate(" + relY / -4 + "px, " + relX / 3 + "px)";
     elements[2].style.transform =
-        "translate(" + relX + "px, " + relY / -7 + "px)";
+        "translate(" +
+        relX +
+        "px, " +
+        relY / -7 +
+        "px) scale(" +
+        relY / (0.2 * relX) +
+        ")";
+    document.body.style.backgroundSize =
+        200 + Math.abs(relX) / 10 + "px " + (200 + Math.abs(relY) / 10) + "px";
 });
