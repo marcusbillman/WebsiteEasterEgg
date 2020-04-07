@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   background: #da02ff;
@@ -17,7 +30,7 @@ body {
   overflow: hidden;
 }
 
-h1 {
+.shitty h1 {
   color: magenta;
   font-size: 60px;
   -webkit-transform: rotate(10deg) scaleX(2);
@@ -26,18 +39,59 @@ h1 {
           perspective: 50px;
 }
 
-p {
+.shitty p {
   font-size: 30px;
 }
 
-.confuse {
+.shitty .confuse {
   display: inline-block;
 }
 
-.marcsu {
+.shitty .marcsu {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.overlay h1 {
+  font-size: 40px;
+  color: #6900ff;
+}
+
+.overlay p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.overlay--hidden {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 /*# sourceMappingURL=main.css.map */

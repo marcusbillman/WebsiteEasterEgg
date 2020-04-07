@@ -1,5 +1,14 @@
 const elements = document.querySelector(".container").children;
 const confuse = document.querySelectorAll(".confuse");
+const overlay = document.querySelector(".overlay");
+
+document.body.addEventListener("mouseenter", event => {
+    overlay.classList.add("overlay--hidden");
+});
+
+document.body.addEventListener("mouseleave", event => {
+    overlay.classList.remove("overlay--hidden");
+});
 
 window.addEventListener("mousemove", event => {
     const relX = event.clientX - window.innerWidth / 2;
