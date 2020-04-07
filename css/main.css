@@ -54,6 +54,13 @@ body {
   transition: transform 1s, -webkit-transform 1s;
 }
 
+.shitty img {
+  width: 300px;
+  height: 100px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 .overlay {
   z-index: 1;
   position: absolute;

@@ -47,6 +47,12 @@ body {
     .marcsu {
         transition: transform 1s;
     }
+
+    img {
+        width: 300px;
+        height: 100px;
+        transform: rotate(15deg);
+    }
 }
 .overlay {
     z-index: 1;
