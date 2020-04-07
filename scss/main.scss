@@ -24,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Papyrus", serif;
+    font-family: "Monoton", serif;
     overflow: hidden;
 }
 
@@ -70,11 +70,12 @@ body {
     transition: all 0.5s;
     h1 {
         font-size: 40px;
+        font-weight: 700;
         color: #6900ff;
     }
     p {
         font-size: 16px;
-        font-weight: normal;
+        font-weight: 200;
     }
     &--hidden {
         transform: translateY(100%);
