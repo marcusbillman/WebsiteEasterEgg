@@ -1,0 +1,29 @@
+body {
+  min-height: 100vh;
+  background: #da02ff;
+  background: radial-gradient(circle, #da02ff 0%, #168255 45%, red 100%);
+  background-repeat: repeat;
+  background-size: 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Papyrus", serif;
+}
+
+h1 {
+  color: magenta;
+  font-size: 60px;
+  -webkit-transform: rotate(10deg) scaleX(2);
+          transform: rotate(10deg) scaleX(2);
+}
+
+p {
+  font-size: 30px;
+}
+/*# sourceMappingURL=main.css.map */

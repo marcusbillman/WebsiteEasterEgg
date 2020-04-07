@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    background: rgb(218, 2, 255);
+    background: radial-gradient(
+        circle,
+        rgba(218, 2, 255, 1) 0%,
+        rgba(22, 130, 85, 1) 45%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    background-repeat: repeat;
+    background-size: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Papyrus", serif;
+}
+
+h1 {
+    color: magenta;
+    font-size: 60px;
+    transform: rotate(10deg) scaleX(2);
+}
+
+p {
+    font-size: 30px;
+}
